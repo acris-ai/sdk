@@ -1,5 +1,5 @@
 {
-  "name": "@acris/sdk",
+  "name": "@acrisai/sdk",
   "version": "0.0.1",
   "description": "SDK to interact with Acris AI agents",
   "main": "./dist/cjs/index.js",
