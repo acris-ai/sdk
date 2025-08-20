@@ -11,14 +11,15 @@ npm install acris-ai
 ## Quick Start
 
 ```typescript
-import { AcrisAI } from 'acris-ai';
+import { AcrisAI } from '@acrisai/sdk';
 
 const acris = new AcrisAI('your-api-key');
 
+// You can get agent id from https://app.acris.ai 
 const agentId = '<agent-id>';
 
 // Run a task with the agent
-const response = await acris.run(agentId, { body: {} });
+const response = await acris.run(agentId, { inputs: {} });
 console.log(response);
 
 
