@@ -30,7 +30,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acris-ai/acris-ai-sdk.git"
+    "url": "git+https://github.com/acris-ai/sdk.git"
   },
   "keywords": [
     "ai",
@@ -42,9 +42,9 @@
     "sdk"
   ],
   "bugs": {
-    "url": "https://github.com/acris-ai/acris-ai-sdk/issues"
+    "url": "https://github.com/acris-ai/sdk/issues"
   },
-  "homepage": "https://github.com/acris-ai/acris-ai-sdk#readme",
+  "homepage": "https://github.com/acris-ai/sdk#readme",
   "devDependencies": {
     "@types/node": "^20.0.0",
     "typescript": "^5.0.0",
