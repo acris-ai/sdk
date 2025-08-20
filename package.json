@@ -1,0 +1,59 @@
+{
+  "name": "@acris/sdk",
+  "version": "0.0.1",
+  "description": "SDK to interact with Acris AI agents",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "example": "tsx example/example.ts",
+    "clean": "rm -rf dist"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "author": "Acris AI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acris-ai/acris-ai-sdk.git"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "acris",
+    "llm",
+    "typescript",
+    "ai",
+    "sdk"
+  ],
+  "bugs": {
+    "url": "https://github.com/acris-ai/acris-ai-sdk/issues"
+  },
+  "homepage": "https://github.com/acris-ai/acris-ai-sdk#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
